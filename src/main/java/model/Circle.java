@@ -1,14 +1,15 @@
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-
-package Calculate;
+package model;
 
 /**
  *
  * @author HP
  */
 public class Circle extends Shape {
+
     private double radius;
 
     public Circle() {
@@ -30,9 +31,11 @@ public class Circle extends Shape {
 
     @Override
     public void printResult() {
+        System.out.println("-----Circle-----");
         System.out.println("Radius: " + this.radius);
         System.out.println("Area: " + getArea());
         System.out.println("Perimeter: " + getPerimeter());
+        System.out.println("------------------");
     }
 
     public double getRadius() {
@@ -42,5 +45,4 @@ public class Circle extends Shape {
     public void setRadius(double radius) {
         this.radius = radius;
     }
-    
 }

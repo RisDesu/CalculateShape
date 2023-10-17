@@ -2,14 +2,15 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package Calculate;
+package model;
 
 /**
  *
  * @author HP
  */
 public abstract class Shape {
-     public double getPerimeter() {
+
+    public double getPerimeter() {
         return 0;
     }
 

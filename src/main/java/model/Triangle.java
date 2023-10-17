@@ -2,13 +2,14 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package Calculate;
+package model;
 
 /**
  *
  * @author HP
  */
 public class Triangle extends Shape {
+
     private double a;
     private double b;
     private double c;
@@ -21,8 +22,9 @@ public class Triangle extends Shape {
         this.b = b;
         this.c = c;
     }
-    
-     public double getA() {
+
+
+    public double getA() {
         return a;
     }
 
@@ -45,7 +47,7 @@ public class Triangle extends Shape {
     public void setC(double c) {
         this.c = c;
     }
-    
+
     @Override
     public double getArea() {
         double p = (a + b + c) / 2;
@@ -59,12 +61,12 @@ public class Triangle extends Shape {
 
     @Override
     public void printResult() {
+        System.out.println("-----Triangle-----");
         System.out.println("Side A: " + this.a);
         System.out.println("Side B: " + this.b);
         System.out.println("Side C: " + this.c);
         System.out.println("Area: " + getArea());
         System.out.println("Perimeter: " + getPerimeter());
+        System.out.println("-------------------");
     }
-
-   
 }
